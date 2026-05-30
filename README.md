@@ -21,3 +21,39 @@ Reduced investigation effort, improved prioritisation, faster triage and enhance
 
 ## Conclusion
 AI should augment investigator workflows by translating complex transactional, network and customer information into actionable intelligence.
+
+
+## Current State Operating Model
+Transaction Monitoring
+Current workflow:
+
+Transactions
+      ↓
+TM Rules Engine
+      ↓
+Alert Generated
+      ↓
+Investigator Reviews Alert
+      ↓
+Gather Information
+      ↓
+Review Network Data
+      ↓
+Create Case Notes
+      ↓
+Escalate / Close
+
+
+## Future State Operating Model
+
+Transactions
+      ↓
+TM Platform
+      ↓
+Quantexa Resolution
+      ↓
+AI Investigator Copilot
+      ↓
+Investigator
+      ↓
+Case Management
