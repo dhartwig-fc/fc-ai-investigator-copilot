@@ -164,4 +164,71 @@ Enterprise Platform
 
 This prototype demonstrates the evolution from traditional rule-based transaction monitoring towards an AI-enabled Financial Crime Investigator Copilot capable of enriching alerts, providing contextual reasoning, generating case documentation and ultimately supporting end-to-end investigation workflows across Financial Crime Operations.
 
+## Operational User Interface Roadmap
+
+| Version | User Interface Capability | Description | Commentary |
+|----------|--------------------------|-------------|-------------|
+| V1 | Alert Scoring Output | Basic Python output displaying alerts, risk scores and prioritisation results. | Proof of concept demonstrating how transaction monitoring alerts can be automatically scored and ranked for investigator review. |
+| V2 | Alert Enrichment View | Displays risk explanations, investigator recommendations and draft case narratives generated from alert attributes. | Introduced explainability and contextual understanding, helping investigators understand why an alert was generated and what actions may be required. |
+| V3 | Investigator Copilot Dashboard | Interactive Streamlit dashboard presenting alert summaries, risk drivers, recommended actions and case narratives. | First operational user experience. Demonstrates how AI-assisted insights can be embedded directly into investigator workflows through an intuitive interface. |
+| V4 | Investigation Work Queue | Multi-alert dashboard displaying prioritised alerts, risk scores, statuses and workload management capabilities. | Simulates a real Financial Crime Operations queue. Enables investigators to manage multiple alerts rather than reviewing individual cases in isolation. |
+| V5 | Customer & Case Management Workspace | Dedicated investigation screen showing customer profile, transaction history, risk indicators and investigation notes. | Provides a consolidated view of customer risk, reducing navigation between systems and improving investigator efficiency. |
+| V6 | Investigation Timeline & Decision Capture | Interactive timeline showing customer events, alerts and investigation history alongside workflow actions such as Close, Escalate or SAR Recommendation. | Aligns the platform with enterprise case management workflows and introduces structured decision recording. |
+| V7 | Network Analytics & Relationship Visualisation | Interactive entity and relationship graphs displaying customers, counterparties and connected risk indicators. | Introduces graph analytics concepts commonly used in modern Financial Crime platforms such as Quantexa. Enables investigators to understand network risk and hidden relationships. |
+| V8 | AI-Powered Investigation Workspace | Dynamic AI assistant embedded within investigations providing contextual reasoning, case summaries and investigator support. | Transitions from static dashboards to interactive AI collaboration. Investigators can query the AI directly and receive context-aware assistance. |
+| V9 | Agentic Investigation Console | AI agents autonomously gather evidence, perform enrichment, assess risk signals and prepare investigation packs for human review. | Represents the shift from AI assistance to AI task execution. Investigators focus on judgement and decision-making while AI performs investigative preparation activities. |
+| V10 | Enterprise Financial Crime Command Centre | Unified platform supporting AML, sanctions, fraud, TBML and intelligence investigations with governance, auditability and operational reporting. | Strategic end-state vision demonstrating how AI can support enterprise-wide Financial Crime Operations while maintaining regulatory oversight and human accountability. |
+
+---
+
+## User Experience Evolution
+
+```text
+V1  Alert Scoring Output
+                ↓
+V2  Alert Enrichment View
+                ↓
+V3  Investigator Copilot Dashboard
+                ↓
+V4  Investigation Work Queue
+                ↓
+V5  Customer & Case Management Workspace
+                ↓
+V6  Investigation Timeline & Decision Capture
+                ↓
+V7  Network Analytics & Relationship Visualisation
+                ↓
+V8  AI-Powered Investigation Workspace
+                ↓
+V9  Agentic Investigation Console
+                ↓
+V10 Enterprise Financial Crime Command Centre
+```
+
+---
+
+## Operational Maturity Journey
+
+```text
+Single Alert Review
+          ↓
+Alert Explanation
+          ↓
+Dashboard Experience
+          ↓
+Work Queue Management
+          ↓
+Case Management
+          ↓
+Investigation Workflow
+          ↓
+Network Analytics
+          ↓
+AI Collaboration
+          ↓
+Agentic Investigation
+          ↓
+Enterprise Command Centre
+```
+
 
