@@ -72,7 +72,6 @@ Provides contextual guidance, including:
 
 ## Example Workflow
 
-```text
 Transaction Monitoring Alert
             ↓
       Risk Scoring
@@ -87,8 +86,9 @@ Transaction Monitoring Alert
             ↓
  Investigator Decision
 
-## Disclaimer
-This prototype is intended for demonstration and educational purposes only. It is not intended for production use and should not replace investigator judgement, regulatory controls or existing Financial Crime governance processes.
+
+## Future Roadmap
+The current prototype demonstrates Versions 1–2 of the AI Investigator Copilot vision. The roadmap below outlines the planned evolution toward a fully AI-enabled Financial Crime investigation platform.
 
 ## Potential version 2?
 Version 2 - Connect to an actual LLM
@@ -100,7 +100,7 @@ Risk Engine
   ↓
 Prompt Builder
   ↓
-GPT / Azure OpenAI
+GPT / OpenAI / Internal bank LLM
   ↓
 AI Narrative
   ↓
@@ -118,5 +118,23 @@ AI Copilot
  ↓
 Ask Questions
 
+
+ # | Version | Capability | Functionality Upgrade | Status |
+|---|---------|------------|----------------------|--------|
+| 1 | V1 | Risk Scoring Prototype | Rules-based risk scoring using customer, transaction, geography, counterparty and adverse media indicators | Complete |
+| 2 | V2 | AI Enrichment & Narrative Generation | Generates risk explanations, investigator commentary, recommended actions and draft case narratives from alert data | Complete |
+| 3 | V3 | Investigator Copilot Dashboard | Interactive operational dashboard presenting alert summaries, risk drivers, recommendations and investigator outputs | In Development |
+| 4 | V4 | Dynamic Prompt Engineering | Automatically builds tailored prompts based on alert typology such as sanctions, adverse media, network risk or transaction anomalies | Planned |
+| 5 | V5 | Multi-Risk Context Reasoning | Combines multiple risk factors into a prioritised assessment and explains which risks are most material to the investigation | Planned |
+| 6 | V6 | Agentic Financial Crime Investigator | AI determines additional information required, gathers evidence and produces investigative recommendations autonomously | Planned |
+| 7 | V7 | Conversational Investigator Assistant | Investigators interact with alerts using natural language questions and receive contextual responses from the copilot | Planned |
+| 8 | V8 | SAR Drafting Copilot | Generates Suspicious Activity Report narratives using alert data, investigator decisions and supporting evidence | Planned |
+| 9 | V9 | Investigation Workflow Orchestration | Guides investigators through review procedures, controls, escalation paths and policy requirements | Planned |
+| 10 | V10 | Knowledge & Typology Intelligence Layer | Integrates typology libraries, historical investigations and institutional knowledge into the copilot workflow | Planned |
+| 11 | V11 | Network Analytics Integration | Incorporates entity resolution, beneficial ownership, hidden relationships and network intelligence into investigations | Planned |
+| 12 | V12 | Trade Finance & TBML Copilot | Applies AI-driven reasoning and enrichment to Trade Finance and Trade-Based Money Laundering investigations | Planned |
+| 13 | V13 | Correspondent Banking Analytics Copilot | Provides contextual analysis of payment flows, sanctions exposure and nested banking relationships | Planned |
+| 14 | V14 | Capital Markets Surveillance Copilot | Supports market abuse, insider dealing and surveillance investigations through AI-assisted analysis | Planned |
+| 15 | V15 | Enterprise Financial Crime AI Platform | Unified AI operating model covering AML, KYC, Fraud, Network Analytics, Surveillance and Regulatory Reporting | Vision |
 
 
