@@ -72,69 +72,96 @@ Provides contextual guidance, including:
 
 ## Example Workflow
 
+```text
 Transaction Monitoring Alert
             ↓
-      Risk Scoring
+        Risk Scoring
             ↓
-      AI Enrichment
+       AI Enrichment
             ↓
  Risk Driver Explanation
             ↓
- Investigator Guidance
+   Investigator Guidance
             ↓
- Draft Case Narrative
+    Draft Case Narrative
             ↓
- Investigator Decision
-
+   Investigator Decision
+```
 
 ## Future Roadmap
-The current prototype demonstrates Versions 1–2 of the AI Investigator Copilot vision. The roadmap below outlines the planned evolution toward a fully AI-enabled Financial Crime investigation platform.
+The current prototype demonstrates Versions 1–3 of the AI Investigator Copilot vision. The roadmap below outlines the planned evolution toward a fully AI-enabled Financial Crime investigation platform.
 
-## Potential version 2?
-Version 2 - Connect to an actual LLM
-Every alert would generate a different commentary.
+### Technical Note
+Versions 1–3 utilise Python-based logic, deterministic enrichment techniques and dashboard visualisation. Future versions introduce Large Language Models (LLMs), dynamic prompt engineering, contextual reasoning and agentic workflows to further enhance investigative capabilities.
 
-Alert
-  ↓
-Risk Engine
-  ↓
-Prompt Builder
-  ↓
-GPT / OpenAI / Internal bank LLM
-  ↓
-AI Narrative
-  ↓
-Investigator Dashboard
+## Capability Evolution Roadmap
 
-## Potential version 3?
-Version 3 - Converstaional copilot capability
-Copilot recommends actions
+| Version | Capability | Description | Commentary |
+|----------|------------|-------------|-------------|
+| V1 | Risk Scoring Prototype | Rule-based scoring engine assessing transaction alerts against predefined risk indicators such as geography, transaction size, adverse media and new counterparties. | Established the foundational alert prioritisation layer. Demonstrated how simple Python logic can replicate core transaction monitoring triage concepts. |
+| V2 | Alert Enrichment & Narrative Generation | Generates investigator-friendly explanations, risk summaries, recommended actions and draft case narratives from alert data using Python-based enrichment logic. | Introduced automated enrichment and explainability. Reduced manual investigator write-up effort by converting alert attributes into contextual case summaries and recommended actions. |
+| V3 | Investigator Copilot Dashboard | Interactive Streamlit interface presenting alert summaries, risk drivers, investigator guidance and case narratives in an operational workflow view. | Transformed the prototype into a user-facing application. Demonstrated how enrichment outputs can be embedded directly into investigator workflows through an operational dashboard experience. |
+| V4 | Dynamic Prompt Engineering | Alert-specific prompts generated dynamically based on customer risk profile, alert type, geography, counterparty attributes and transaction characteristics. | Introduces Large Language Model integration. AI-generated narratives become tailored to the specific alert context, improving relevance, reasoning quality and investigator support. |
+| V5 | Multi-Risk Context Reasoning | Combines transaction monitoring, KYC, customer risk, adverse media, sanctions and network analytics signals into a unified reasoning framework. | Simulates how experienced investigators assess multiple risk factors simultaneously rather than reviewing alerts in isolation. Produces richer contextual assessments and investigative recommendations. |
+| V6 | Agentic Financial Crime Investigator | AI agents independently perform enrichment tasks such as customer profiling, network analysis, adverse media review, counterparty assessment and narrative generation. | Represents the transition from AI assistance to AI task execution. Human investigators remain accountable while AI performs investigative preparation and evidence gathering activities. |
+| V7 | Enterprise Financial Crime Investigation Platform | Fully integrated Financial Crime Copilot supporting transaction monitoring, AML investigations, sanctions, TBML, fraud and intelligence workflows with governance and audit controls. | Strategic end-state vision. Demonstrates how AI can augment Financial Crime Operations at enterprise scale while maintaining regulatory oversight, governance and human accountability. |
 
-Alert
- ↓
-Risk Score
- ↓
-AI Copilot
- ↓
-Ask Questions
+---
 
+### Current Prototype Status
 
- # | Version | Capability | Functionality Upgrade | Status |
-|---|---------|------------|----------------------|--------|
-| 1 | V1 | Risk Scoring Prototype | Rules-based risk scoring using customer, transaction, geography, counterparty and adverse media indicators | Complete |
-| 2 | V2 | AI Enrichment & Narrative Generation | Generates risk explanations, investigator commentary, recommended actions and draft case narratives from alert data | Complete |
-| 3 | V3 | Investigator Copilot Dashboard | Interactive operational dashboard presenting alert summaries, risk drivers, recommendations and investigator outputs | In Development |
-| 4 | V4 | Dynamic Prompt Engineering | Automatically builds tailored prompts based on alert typology such as sanctions, adverse media, network risk or transaction anomalies | Planned |
-| 5 | V5 | Multi-Risk Context Reasoning | Combines multiple risk factors into a prioritised assessment and explains which risks are most material to the investigation | Planned |
-| 6 | V6 | Agentic Financial Crime Investigator | AI determines additional information required, gathers evidence and produces investigative recommendations autonomously | Planned |
-| 7 | V7 | Conversational Investigator Assistant | Investigators interact with alerts using natural language questions and receive contextual responses from the copilot | Planned |
-| 8 | V8 | SAR Drafting Copilot | Generates Suspicious Activity Report narratives using alert data, investigator decisions and supporting evidence | Planned |
-| 9 | V9 | Investigation Workflow Orchestration | Guides investigators through review procedures, controls, escalation paths and policy requirements | Planned |
-| 10 | V10 | Knowledge & Typology Intelligence Layer | Integrates typology libraries, historical investigations and institutional knowledge into the copilot workflow | Planned |
-| 11 | V11 | Network Analytics Integration | Incorporates entity resolution, beneficial ownership, hidden relationships and network intelligence into investigations | Planned |
-| 12 | V12 | Trade Finance & TBML Copilot | Applies AI-driven reasoning and enrichment to Trade Finance and Trade-Based Money Laundering investigations | Planned |
-| 13 | V13 | Correspondent Banking Analytics Copilot | Provides contextual analysis of payment flows, sanctions exposure and nested banking relationships | Planned |
-| 14 | V14 | Capital Markets Surveillance Copilot | Supports market abuse, insider dealing and surveillance investigations through AI-assisted analysis | Planned |
-| 15 | V15 | Enterprise Financial Crime AI Platform | Unified AI operating model covering AML, KYC, Fraud, Network Analytics, Surveillance and Regulatory Reporting | Vision |
+| Capability | Status |
+|------------|---------|
+| V1 Risk Scoring Prototype | ✅ Complete |
+| V2 Alert Enrichment & Narrative Generation | ✅ Complete |
+| V3 Investigator Copilot Dashboard | ✅ Complete |
+| V4 Dynamic Prompt Engineering | 🔄 Planned |
+| V5 Multi-Risk Context Reasoning | 🔄 Planned |
+| V6 Agentic Financial Crime Investigator | 🔄 Planned |
+| V7 Enterprise Financial Crime Investigation Platform | 🔄 Vision |
+
+---
+
+## Evolution Workflow
+
+```text
+V1  Risk Scoring
+          ↓
+V2  AI Enrichment & Narrative Generation
+          ↓
+V3  Investigator Copilot Dashboard
+          ↓
+V4  Dynamic Prompt Engineering
+          ↓
+V5  Multi-Risk Context Reasoning
+          ↓
+V6  Agentic Financial Crime Investigator
+          ↓
+V7  Enterprise Financial Crime Investigation Platform
+```
+
+---
+
+## Development Journey
+
+```text
+Rules-Based Logic
+          ↓
+Explainability
+          ↓
+User Experience
+          ↓
+Generative AI
+          ↓
+Contextual Reasoning
+          ↓
+Autonomous Agents
+          ↓
+Enterprise Platform
+```
+
+### Strategic Vision
+
+This prototype demonstrates the evolution from traditional rule-based transaction monitoring towards an AI-enabled Financial Crime Investigator Copilot capable of enriching alerts, providing contextual reasoning, generating case documentation and ultimately supporting end-to-end investigation workflows across Financial Crime Operations.
 
 
