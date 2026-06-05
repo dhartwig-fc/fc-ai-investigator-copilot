@@ -235,4 +235,32 @@ Agentic Investigation
 Enterprise Command Centre
 ```
 
+---
 
+## Navigation
+
+### Previous Capability
+
+⬅️ [Investigation Workflows](../01-network-intelligence/05-investigation-workflows/README.md)
+
+### Related Assets
+
+📐 [Reference Architecture](./reference-architecture/README.md)
+
+### Future Capability Roadmaps
+
+📊 [Capability Evolution Roadmap](./roadmaps/capability-evolution.md)
+
+🏢 [Operational Maturity Roadmap](./roadmaps/operational-maturity.md)
+
+🖥️ [User Experience Evolution](./roadmaps/ui-evolution.md)
+
+### Future Portfolio Extensions
+
+➡️ AI Agent Framework (Future)
+
+➡️ MCP Financial Crime Toolkit (Future)
+
+➡️ Enterprise Financial Crime Command Centre (Future)
+
+---
